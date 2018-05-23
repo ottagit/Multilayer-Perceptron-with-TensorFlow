@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score
 
 X,y = load_iris(return_X_y = True)
-#Merging input and outputs i
+#Merging input and outputs
 data = pd.concat([pd.DataFrame(X),pd.Series(y)],axis=1)
 
 #Naming columns
@@ -127,7 +127,7 @@ with tf.Session() as sess:
                                                             Y: batch_y,
                                                             hold_prob1:0.7,
                                                             hold_prob2:0.8})
-        #Feeding CV data to te graphs
+        #Feeding CV data to the graphs
         acc_on_cv,loss_on_cv,preds_on_cv = sess.run([acc,loss_op,tf.nn.softmax(logits)],
                                                     feed_dict = 
                                                             {X: X_cv,
