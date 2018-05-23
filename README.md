@@ -10,7 +10,8 @@ or
 
 ```pip3 install -r requirements.txt```
 
-# Training
+# Cloning and Training
+```git clone https://github.com/MuhammedBuyukkinaci/Multilayer-Perceptron-with-TensorFlow```
 
 ```cd Multilayer-Perceptron-with-TensorFlow```
 
