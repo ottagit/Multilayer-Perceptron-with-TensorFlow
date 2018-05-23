@@ -12,4 +12,4 @@ or
 
 # Training
 
-```python install MultiLayer_Perceptron_with_TensorFlow.py```
+```python MultiLayer_Perceptron_with_TensorFlow.py```
