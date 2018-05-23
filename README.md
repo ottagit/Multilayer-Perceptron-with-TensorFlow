@@ -12,6 +12,8 @@ or
 
 # Training
 
+```cd Multilayer-Perceptron-with-TensorFlow```
+
 ```python MultiLayer_Perceptron_with_TensorFlow.py```
 
 # Architecture
