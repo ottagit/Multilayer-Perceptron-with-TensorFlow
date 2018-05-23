@@ -51,33 +51,33 @@ batch_size = 5
 # Network Parameters
 n_hidden_1 = 10 # number of neurons in 1st layer 
 n_hidden_2 = 5 # number of neurons in 2nd layer 
-n_input = 4 # 4 columns
-n_classes = 3 #Output classes
+n_input = 4 # 4 columns in input data
+n_classes = 3 # Number of Output classes in output data
 steps = len(X_train) # How many training data
 
 #Resetting the graph
 tf.reset_default_graph()
 
 #Defining Placeholders
-X = tf.placeholder("float", [None, n_input])
-Y = tf.placeholder("float", [None, n_classes])
-hold_prob1 = tf.placeholder(tf.float32)
-hold_prob2 = tf.placeholder(tf.float32)
+X = tf.placeholder("float", [None, n_input])# for input
+Y = tf.placeholder("float", [None, n_classes])#for output
+hold_prob1 = tf.placeholder(tf.float32)#for first dropout layer
+hold_prob2 = tf.placeholder(tf.float32)#for second dropout layer
 
-# Store layers weight & bias
+# Weights
 weights = {
     'h1': tf.Variable(tf.truncated_normal([n_input, n_hidden_1],mean = 0.0,stddev=0.2)),
     'h2': tf.Variable(tf.truncated_normal([n_hidden_1, n_hidden_2],mean = 0.0,stddev = 0.2)),
     'out': tf.Variable(tf.truncated_normal([n_hidden_2, n_classes],mean = 0.0,stddev = 0.2))
 }
+#Biases
 biases = {
     'b1': tf.Variable(tf.constant(0.1,shape = [n_hidden_1])),
     'b2': tf.Variable(tf.constant(0.1,shape = [n_hidden_2])),
     'out': tf.Variable(tf.constant(0.1,shape = [n_classes]))
 }
 
-
-# Create model
+# Desiging our model
 def multilayer_perceptron(x):
     # First Hidden Layer
     layer_1 = tf.add(tf.matmul(x, weights['h1']), biases['b1'])
