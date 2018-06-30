@@ -2,13 +2,6 @@
 
 Multilayer Perceptron with TensorFlow on Iris dataset
 
-.fa-font:before {
-        font-family: roboto;
-        color: #429bf4;
-        font-size: 1.2em;
-        content: "k";   #any letter of your choice but for kaggle "k"
-}
-
 # Dependencies
 
 ```pip install -r requirements.txt```
