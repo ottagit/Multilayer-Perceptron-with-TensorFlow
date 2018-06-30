@@ -2,6 +2,8 @@
 
 Multilayer Perceptron with TensorFlow on Iris dataset
 
+<i class="fa fa-medium"></i>
+
 # Dependencies
 
 ```pip install -r requirements.txt```
