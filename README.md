@@ -2,7 +2,12 @@
 
 Multilayer Perceptron with TensorFlow on Iris dataset
 
-<i class="fa fa-medium"></i>
+.fa-font:before {
+        font-family: roboto;
+        color: #429bf4;
+        font-size: 1.2em;
+        content: "k";   #any letter of your choice but for kaggle "k"
+}
 
 # Dependencies
 
