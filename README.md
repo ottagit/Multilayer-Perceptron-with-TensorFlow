@@ -15,7 +15,7 @@ or
 
 ```cd Multilayer-Perceptron-with-TensorFlow```
 
-```python MultiLayer_Perceptron_with_TensorFlow.py```
+```python3 MultiLayer_Perceptron_with_TensorFlow.py```
 
 # Architecture
 
