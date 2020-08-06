@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 import random
 import os
 from tqdm import tqdm,tqdm_notebook,_tqdm_notebook
-tqdm.pandas(tqdm_notebook)
+tqdm.pandas()
 #Suppressing warnings and infos of TensorFlow
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 SEED = 51 #Fixing seed
